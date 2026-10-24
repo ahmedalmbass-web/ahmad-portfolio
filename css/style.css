@@ -2261,3 +2261,87 @@ html[lang="en"] .brand-strip-inner span::before {
 }
 
 
+/* Project preview images */
+.portfolio-project-art {
+  position: relative;
+  min-height: 230px;
+  padding: 0;
+  overflow: hidden;
+  isolation: isolate;
+  background: linear-gradient(135deg, #244f40, #101712);
+}
+
+.portfolio-project-art::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 80% 15%, rgba(217,189,123,.32), transparent 40%),
+    linear-gradient(135deg, #244f40, #101712);
+}
+
+.portfolio-project-art .project-number {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 2;
+  padding: 7px 10px;
+  border: 1px solid rgba(255,255,255,.25);
+  border-radius: 999px;
+  background: rgba(16,23,18,.72);
+  backdrop-filter: blur(8px);
+  font-size: 10px;
+}
+
+.portfolio-project-art h3 {
+  position: absolute;
+  right: 18px;
+  bottom: 16px;
+  left: 18px;
+  z-index: 2;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.65);
+}
+
+.portfolio-project-art img {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .5s ease;
+}
+
+.portfolio-project:hover .portfolio-project-art img {
+  transform: scale(1.045);
+}
+
+.portfolio-project-art.has-preview::before {
+  background: linear-gradient(
+    0deg,
+    rgba(10,16,12,.88) 0%,
+    rgba(10,16,12,.18) 55%,
+    rgba(10,16,12,.12) 100%
+  );
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .portfolio-project-art {
+    min-height: 200px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-project-art img {
+    transition: none;
+  }
+}
+
+
+
