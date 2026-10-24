@@ -1,307 +1,382 @@
 
-/* =========================================
-   AHMAD PORTFOLIO — INTERACTIONS
-========================================= */
-
 "use strict";
 
 const translations = {
   ar: {
-    pageTitle: "أحمد | مصمم واجهات ومواقع وهويات رقمية",
+    pageTitle: "أحمد | مصمم واجهات ومواقع وهوية رقمية",
     navHome: "الرئيسية",
     navAbout: "من أنا",
     navServices: "خدماتي",
     navProjects: "أعمالي",
-    navContact: "لنتحدث",
+    navContact: "تواصل معي",
 
-    heroEyebrow: "تصميم رقمي بفكرة مختلفة",
-    heroKicker: "مصمم واجهات ومواقع وهويات رقمية",
-    heroTitle: 'أصنع من الأفكار <span class="title-accent">تجارب رقمية</span> تستحق أن تُرى.',
-    heroDescription: "أعمل على تصميم تجارب رقمية تجمع بين الهوية البصرية، وسهولة الاستخدام، والتفاصيل التي تصنع الفرق.",
+    heroEyebrow: "تصميم رقمي برؤية مختلفة",
+    heroKicker: "مرحبًا، أنا",
+    heroTitle: "أحمد، أصنع حضورك الرقمي",
+    heroAccent: "بأناقة ووضوح.",
+    heroDescription: "مصمم واجهات ومواقع وهوية رقمية. أهتم بتحويل الأفكار إلى تجارب رقمية أنيقة وواضحة وسهلة الاستخدام.",
     exploreWork: "استكشف أعمالي",
-    startProject: "لنبدأ مشروعك",
-    heroNote: "الفكرة الجيدة تستحق تنفيذًا استثنائيًا.",
-    portraitLabel: "مساحتي الإبداعية",
-    portraitCaption: "التصميم · الإبداع · التجربة",
-    floatingCard: "كل تفصيلة لها معنى.",
+    startProject: "لنبدأ مشروعًا",
+    heroNote: "كل فكرة تستحق حضورًا رقميًا يليق بها.",
+    portraitLabel: "تصميم • تقنية • إبداع",
+    portraitCaption: "مساحة للأفكار الكبيرة",
+    floatingCard: "نحو تجربة رقمية أفضل",
     scrollText: "اكتشف المزيد",
 
-    stripOne: "هوية بصرية",
-    stripTwo: "تجربة مستخدم",
-    stripThree: "تصميم مواقع",
-    stripFour: "تجارب رقمية",
+    stripOne: "واجهات رقمية",
+    stripTwo: "تصميم مواقع",
+    stripThree: "هوية بصرية",
+    stripFour: "تجربة مستخدم",
 
-    aboutIndex: "التعريف",
-    aboutEyebrow: "وراء كل واجهة فكرة",
-    aboutTitle: 'التصميم ليس مجرد شكل،<br><span class="title-accent">بل تجربة متكاملة.</span>',
-    aboutLead: "أنا أحمد، أعمل في مجال تصميم الواجهات والمواقع والهويات الرقمية، وأهتم بتحويل الأفكار إلى تجارب واضحة وجذابة وسهلة الاستخدام.",
-    aboutDescription: "أؤمن أن الموقع المميز لا يعتمد على مظهره فقط؛ بل على كيفية تقديم الفكرة، وتنظيم المحتوى، ومساعدة الزائر على الوصول إلى ما يحتاج إليه بسهولة. كل مشروع بالنسبة لي فرصة لصناعة تجربة تناسب هويته وجمهوره.",
-    aboutCta: "هل لديك فكرة؟ دعنا نتحدث",
+    aboutIndex: "01 / نبذة",
+    aboutEyebrow: "من أنا",
+    aboutTitle: "أحوّل الأفكار إلى تجارب رقمية واضحة.",
+    aboutLead: "أنا أحمد، مهتم بتصميم الواجهات والمواقع وبناء حضور رقمي يعكس شخصية كل مشروع.",
+    aboutDescription: "أركز على التوازن بين الشكل والوظيفة، من ترتيب المحتوى واختيار الألوان إلى سهولة التنقل وتجربة الاستخدام على مختلف الشاشات.",
+    aboutCta: "تحدث معي عن فكرتك ↗",
 
-    servicesIndex: "ما أقدمه",
-    servicesEyebrow: "من الفكرة إلى الواجهة",
-    servicesTitle: 'حلول رقمية بهوية<br><span class="title-accent">لا تشبه غيرها.</span>',
+    servicesIndex: "02 / الخدمات",
+    servicesEyebrow: "ما أقدمه",
+    servicesTitle: "حلول رقمية تبدأ من الفكرة.",
     serviceOneTitle: "تصميم واجهات المستخدم",
-    serviceOneDescription: "واجهات منظمة وواضحة تراعي سهولة الاستخدام وتفاصيل التجربة.",
+    serviceOneDescription: "واجهات واضحة ومتناسقة تساعد الزائر على الوصول لما يحتاجه بسهولة.",
     serviceTwoTitle: "تصميم وتطوير المواقع",
-    serviceTwoDescription: "مواقع متجاوبة تقدم نشاطك بصورة احترافية على مختلف الأجهزة.",
+    serviceTwoDescription: "مواقع متجاوبة تعرض الخدمات والمحتوى بصورة منظمة على مختلف الأجهزة.",
     serviceThreeTitle: "الهوية الرقمية",
-    serviceThreeDescription: "لغة بصرية متناسقة تساعد العلامة التجارية على تقديم نفسها بوضوح.",
-    serviceFourTitle: "تجربة المتاجر والخدمات",
-    serviceFourDescription: "تنظيم المنتجات والخدمات والمحتوى لتسهيل رحلة العميل.",
+    serviceThreeDescription: "تنسيق بصري يعبّر عن شخصية المشروع ويحافظ على اتساق حضوره الرقمي.",
+    serviceFourTitle: "تحسين تجربة الاستخدام",
+    serviceFourDescription: "الاهتمام بوضوح المحتوى وسهولة الحركة بين أقسام الموقع.",
 
-    projectsIndex: "مختارات من أعمالي",
-    projectsEyebrow: "أفكار تتحول إلى تجارب",
-    projectsTitle: 'مشاريع صنعت<br><span class="title-accent">لكل منها هويته.</span>',
-    projectsIntro: "مجموعة من المشاريع الرقمية في مجالات التجارة الإلكترونية والضيافة والخدمات. افتح أي مشروع لاستكشافه.",
-    catFashion: "أزياء وتجارة إلكترونية",
+    projectsIndex: "03 / مختارات من الأعمال",
+    projectsEyebrow: "المشاريع",
+    projectsTitle: "أفكار تحولت إلى مشاريع رقمية.",
+    projectsIntro: "مجموعة من المواقع والمشاريع التي يمكنك استكشافها عبر روابطها المباشرة.",
+    catFashion: "متجر أزياء وعبايات",
     catAccessories: "متجر إكسسوارات",
-    catDigital: "مشروع رقمي",
-    catResort: "ضيافة وإقامة",
-    catRestaurant: "مطاعم ومأكولات",
-    catCafe: "مقاهٍ وضيافة",
-    catBooking: "منصة حجوزات · قيد التطوير",
+    catDigital: "مشروع طلبات رقمي",
+    catResort: "موقع منتجع",
+    catRestaurant: "موقع مطعم",
+    catCafe: "موقع كافيه",
+    catBooking: "منصة للحجوزات والمواعيد",
+    meeadStatus: "قيد الاستكمال",
     viewProject: "استكشف المشروع ↗",
-    projectsFootnote: "الصور المستخدمة حاليًا صور توضيحية مؤقتة، وليست لقطات من المواقع نفسها.",
+    projectsFootnote: "تعرض البطاقات أسماء المشاريع ووصفها؛ افتح الروابط لمشاهدة المواقع الفعلية.",
 
-    statement: "التفاصيل الصغيرة لا تصنع فرقًا صغيرًا؛ إنها ما يجعل التجربة استثنائية.",
+    statement: "التصميم الجيد ليس مجرد شكل جميل، بل تجربة تبقى في الذاكرة.",
 
-    contactIndex: "تواصل",
-    contactEyebrow: "كل مشروع يبدأ بمحادثة",
-    contactTitle: 'لديك فكرة؟<br><span class="title-accent">دعنا نصنع شيئًا مميزًا.</span>',
-    contactDescription: "أخبرني عن فكرتك وما تريد تحقيقه، ولنبدأ بمناقشة الخطوة المناسبة.",
-    emailMe: "تواصل عبر البريد",
-    whatsappMe: "تواصل عبر واتساب",
-    contactNote: "استبدل بيانات البريد ورقم الهاتف ببيانات التواصل الخاصة بك قبل النشر.",
+    contactIndex: "04 / تواصل",
+    contactEyebrow: "لديك فكرة؟",
+    contactTitle: "لنجعل فكرتك حاضرة على الإنترنت.",
+    contactDescription: "سواء كنت تبدأ مشروعًا جديدًا أو ترغب في تطوير حضورك الرقمي، يمكنك التواصل معي عبر حسابات التواصل التالية.",
+    emailMe: "تواصل عبر LinkedIn ↗",
+    whatsappMe: "تواصل عبر واتساب ↗",
+    contactNote: "يسعدني الاطلاع على فكرتك ومناقشة تفاصيلها.",
 
-    footerText: "تصميم بفكرة. وتنفيذ باهتمام.",
-    languageLabel: "Switch to English",
+    footerText: "صُنع باهتمام بالتفاصيل.",
+    languageLabel: "تغيير اللغة",
     themeLabel: "تغيير المظهر",
     menuOpen: "فتح القائمة",
     menuClose: "إغلاق القائمة",
-    portraitAlt: "صورة أحمد الشخصية"
+    portraitAlt: "صورة أحمد"
   },
 
   en: {
-    pageTitle: "Ahmad | Digital Designer",
+    pageTitle: "Ahmad | UI, Web & Digital Identity Designer",
     navHome: "Home",
     navAbout: "About",
     navServices: "Services",
-    navProjects: "Selected Work",
-    navContact: "Let's Talk",
+    navProjects: "Projects",
+    navContact: "Contact",
 
     heroEyebrow: "Digital design with a different perspective",
-    heroKicker: "Digital Designer · Web & Visual Identity",
-    heroTitle: 'Turning ideas into <span class="title-accent">digital experiences</span> worth seeing.',
-    heroDescription: "I design digital experiences that bring together visual identity, usability, and the details that make a difference.",
+    heroKicker: "Hello, I'm",
+    heroTitle: "Ahmad, shaping your digital presence",
+    heroAccent: "With clarity and elegance.",
+    heroDescription: "A UI, web, and digital identity designer focused on turning ideas into elegant, clear, and user-friendly digital experiences.",
     exploreWork: "Explore My Work",
     startProject: "Start a Project",
-    heroNote: "Good ideas deserve thoughtful execution.",
-    portraitLabel: "My Creative Space",
-    portraitCaption: "Design · Creativity · Experience",
-    floatingCard: "Every detail has meaning.",
+    heroNote: "Every idea deserves a digital presence that reflects its value.",
+    portraitLabel: "Design • Technology • Creativity",
+    portraitCaption: "A space for big ideas",
+    floatingCard: "Toward a better digital experience",
     scrollText: "Discover More",
 
-    stripOne: "Visual Identity",
-    stripTwo: "User Experience",
-    stripThree: "Web Design",
-    stripFour: "Digital Experiences",
+    stripOne: "Digital Interfaces",
+    stripTwo: "Web Design",
+    stripThree: "Visual Identity",
+    stripFour: "User Experience",
 
-    aboutIndex: "ABOUT",
-    aboutEyebrow: "Every interface starts with an idea",
-    aboutTitle: 'Design is more than appearance.<br><span class="title-accent">It is a complete experience.</span>',
-    aboutLead: "I'm Ahmad, working in interface design, websites, and digital identity. I focus on turning ideas into clear, engaging, and easy-to-use experiences.",
-    aboutDescription: "I believe a great website is defined by more than its appearance. It is also about communicating an idea, organizing content, and helping visitors find what they need. Every project is an opportunity to create an experience suited to its identity and audience.",
-    aboutCta: "Have an idea? Let's talk",
+    aboutIndex: "01 / ABOUT",
+    aboutEyebrow: "About Me",
+    aboutTitle: "Turning ideas into clear digital experiences.",
+    aboutLead: "I'm Ahmad, interested in designing interfaces and websites that reflect each project's character.",
+    aboutDescription: "I focus on balancing form and function, from content structure and color choices to intuitive navigation and usability across screens.",
+    aboutCta: "Let's discuss your idea ↗",
 
-    servicesIndex: "WHAT I DO",
-    servicesEyebrow: "From concept to interface",
-    servicesTitle: 'Digital solutions with<br><span class="title-accent">a distinct identity.</span>',
+    servicesIndex: "02 / SERVICES",
+    servicesEyebrow: "What I Do",
+    servicesTitle: "Digital solutions begin with an idea.",
     serviceOneTitle: "User Interface Design",
-    serviceOneDescription: "Clear, organized interfaces focused on usability and the details of the experience.",
+    serviceOneDescription: "Clear, consistent interfaces that help visitors find what they need with ease.",
     serviceTwoTitle: "Website Design & Development",
-    serviceTwoDescription: "Responsive websites that present your business professionally across devices.",
+    serviceTwoDescription: "Responsive websites that present services and content clearly across devices.",
     serviceThreeTitle: "Digital Identity",
-    serviceThreeDescription: "A consistent visual language that helps a brand communicate clearly.",
-    serviceFourTitle: "Commerce & Service Experiences",
-    serviceFourDescription: "Organizing products, services, and content to simplify the customer journey.",
+    serviceThreeDescription: "A visual direction that reflects a project's personality and keeps its digital presence consistent.",
+    serviceFourTitle: "User Experience",
+    serviceFourDescription: "Improving content clarity and making navigation between sections easier.",
 
-    projectsIndex: "SELECTED WORK",
-    projectsEyebrow: "Ideas turned into experiences",
-    projectsTitle: 'Selected projects,<br><span class="title-accent">each with its own identity.</span>',
-    projectsIntro: "A collection of digital projects across e-commerce, hospitality, and services. Open a project to explore it.",
-    catFashion: "Fashion & E-commerce",
+    projectsIndex: "03 / SELECTED WORK",
+    projectsEyebrow: "Projects",
+    projectsTitle: "Ideas transformed into digital projects.",
+    projectsIntro: "Explore a selection of websites and digital projects through their direct links.",
+    catFashion: "Fashion & Abaya Store",
     catAccessories: "Accessories Store",
-    catDigital: "Digital Project",
-    catResort: "Hospitality & Stays",
-    catRestaurant: "Restaurant & Dining",
-    catCafe: "Cafe & Hospitality",
-    catBooking: "Booking Platform · In Development",
+    catDigital: "Digital Ordering Project",
+    catResort: "Resort Website",
+    catRestaurant: "Restaurant Website",
+    catCafe: "Cafe Website",
+    catBooking: "Booking & Appointment Platform",
+    meeadStatus: "In Progress",
     viewProject: "Explore Project ↗",
-    projectsFootnote: "The images currently shown are temporary illustrative images, not screenshots of the actual websites.",
+    projectsFootnote: "These cards introduce the projects. Open each link to explore the actual website.",
 
-    statement: "Small details do not make a small difference. They make an experience exceptional.",
+    statement: "Good design is more than a beautiful look; it is an experience people remember.",
 
-    contactIndex: "CONTACT",
-    contactEyebrow: "Every project starts with a conversation",
-    contactTitle: 'Have an idea?<br><span class="title-accent">Let’s make something remarkable.</span>',
-    contactDescription: "Tell me about your idea and what you want to achieve. Let's discuss the right next step.",
-    emailMe: "Get in Touch by Email",
-    whatsappMe: "Message on WhatsApp",
-    contactNote: "Replace the email address and phone number with your own contact details before publishing.",
+    contactIndex: "04 / CONTACT",
+    contactEyebrow: "Have an Idea?",
+    contactTitle: "Let's bring your idea online.",
+    contactDescription: "Whether you're starting something new or improving your digital presence, you can reach me through the social links below.",
+    emailMe: "Connect on LinkedIn ↗",
+    whatsappMe: "Contact on WhatsApp ↗",
+    contactNote: "I'd be glad to learn about your idea and discuss its details.",
 
-    footerText: "Designed with intention. Built with care.",
-    languageLabel: "التبديل إلى العربية",
+    footerText: "Made with attention to detail.",
+    languageLabel: "Change language",
     themeLabel: "Change appearance",
     menuOpen: "Open menu",
     menuClose: "Close menu",
-    portraitAlt: "Portrait of Ahmad"
+    portraitAlt: "Ahmad's portrait"
   }
 };
 
 const root = document.documentElement;
-const languageToggle = document.getElementById("languageToggle");
-const themeToggle = document.getElementById("themeToggle");
-const themeIcon = document.getElementById("themeIcon");
-const menuToggle = document.getElementById("menuToggle");
-const mainNav = document.getElementById("mainNav");
-const portraitImage = document.getElementById("portraitImage");
-const portraitPlaceholder = document.getElementById("portraitPlaceholder");
 
-let currentLanguage = "ar";
-let currentTheme = "dark";
-
-/* Apply language without replacing links or event handlers. */
-function setLanguage(language) {
-  if (!translations[language]) return;
-
-  currentLanguage = language;
-
-  root.lang = language;
-  root.dir = language === "ar" ? "rtl" : "ltr";
-
-  document.title = translations[language].pageTitle;
-
-  document.querySelectorAll("[data-i18n]").forEach((element) => {
-    const key = element.dataset.i18n;
-    const value = translations[language][key];
-
-    if (typeof value === "string") {
-      element.innerHTML = value;
-    }
-  });
-
-  languageToggle.textContent = language === "ar" ? "EN" : "ع";
-  languageToggle.setAttribute(
-    "aria-label",
-    translations[language].languageLabel
-  );
-
-  themeToggle.setAttribute(
-    "aria-label",
-    translations[language].themeLabel
-  );
-
-  menuToggle.setAttribute(
-    "aria-label",
-    mainNav.classList.contains("is-open")
-      ? translations[language].menuClose
-      : translations[language].menuOpen
-  );
-
-  if (portraitImage) {
-    portraitImage.alt = translations[language].portraitAlt;
-  }
-
+function safeGet(key) {
   try {
-    localStorage.setItem("ahmad-portfolio-language", language);
-  } catch (_) {
-    // The site still works if browser storage is unavailable.
+    return localStorage.getItem(key);
+  } catch {
+    return null;
   }
 }
 
-/* Change between light and dark themes. */
+function safeSet(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    // The website remains usable if browser storage is unavailable.
+  }
+}
+
+function setLanguage(language) {
+  const lang = translations[language] ? language : "ar";
+  const dictionary = translations[lang];
+
+  root.lang = lang;
+  root.dir = lang === "ar" ? "rtl" : "ltr";
+  document.title = dictionary.pageTitle;
+
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const key = element.dataset.i18n;
+
+    if (Object.prototype.hasOwnProperty.call(dictionary, key)) {
+      element.textContent = dictionary[key];
+    }
+  });
+
+  const languageButton = document.getElementById("languageToggle");
+
+  if (languageButton) {
+    languageButton.textContent = lang === "ar" ? "EN" : "ع";
+    languageButton.setAttribute(
+      "aria-label",
+      lang === "ar" ? "Switch to English" : "التبديل إلى العربية"
+    );
+    languageButton.setAttribute(
+      "title",
+      lang === "ar" ? "English" : "العربية"
+    );
+  }
+
+  const portrait = document.getElementById("portraitImage");
+
+  if (portrait) {
+    portrait.alt = dictionary.portraitAlt;
+  }
+
+  const menuButton = document.getElementById("menuToggle");
+
+  if (menuButton) {
+    const isOpen = menuButton.getAttribute("aria-expanded") === "true";
+
+    menuButton.setAttribute(
+      "aria-label",
+      isOpen ? dictionary.menuClose : dictionary.menuOpen
+    );
+  }
+
+  safeSet("ahmad-portfolio-language", lang);
+}
+
 function setTheme(theme) {
-  if (!["dark", "light"].includes(theme)) return;
+  const selectedTheme = theme === "light" ? "light" : "dark";
 
-  currentTheme = theme;
-  root.dataset.theme = theme;
+  root.setAttribute("data-theme", selectedTheme);
 
-  themeIcon.textContent = theme === "dark" ? "☼" : "☾";
+  const themeIcon = document.getElementById("themeIcon");
+  const themeButton = document.getElementById("themeToggle");
+
+  if (themeIcon) {
+    themeIcon.textContent = selectedTheme === "dark" ? "☼" : "☾";
+  }
+
+  if (themeButton) {
+    const lang = root.lang || "ar";
+    themeButton.setAttribute(
+      "aria-label",
+      translations[lang].themeLabel
+    );
+    themeButton.setAttribute(
+      "title",
+      selectedTheme === "dark"
+        ? (lang === "ar" ? "الوضع الفاتح" : "Light mode")
+        : (lang === "ar" ? "الوضع الداكن" : "Dark mode")
+    );
+  }
 
   const themeColor = document.querySelector('meta[name="theme-color"]');
 
   if (themeColor) {
     themeColor.setAttribute(
       "content",
-      theme === "dark" ? "#10130f" : "#f5f3ec"
+      selectedTheme === "dark" ? "#101712" : "#f5f3ec"
     );
   }
 
-  try {
-    localStorage.setItem("ahmad-portfolio-theme", theme);
-  } catch (_) {
-    // Theme remains active for the current page session.
-  }
+  safeSet("ahmad-portfolio-theme", selectedTheme);
 }
 
-/* Mobile navigation. */
 function closeMenu() {
-  mainNav.classList.remove("is-open");
-  menuToggle.setAttribute("aria-expanded", "false");
-  menuToggle.setAttribute(
-    "aria-label",
-    translations[currentLanguage].menuOpen
-  );
+  const nav = document.getElementById("mainNav");
+  const button = document.getElementById("menuToggle");
+
+  if (!nav || !button) return;
+
+  nav.classList.remove("is-open");
+  button.classList.remove("is-active");
+  button.setAttribute("aria-expanded", "false");
+
+  const lang = root.lang || "ar";
+  button.setAttribute("aria-label", translations[lang].menuOpen);
 }
 
 function toggleMenu() {
-  const isOpen = mainNav.classList.toggle("is-open");
+  const nav = document.getElementById("mainNav");
+  const button = document.getElementById("menuToggle");
 
-  menuToggle.setAttribute("aria-expanded", String(isOpen));
-  menuToggle.setAttribute(
+  if (!nav || !button) return;
+
+  const shouldOpen = !nav.classList.contains("is-open");
+
+  nav.classList.toggle("is-open", shouldOpen);
+  button.classList.toggle("is-active", shouldOpen);
+  button.setAttribute("aria-expanded", String(shouldOpen));
+
+  const lang = root.lang || "ar";
+  button.setAttribute(
     "aria-label",
-    isOpen
-      ? translations[currentLanguage].menuClose
-      : translations[currentLanguage].menuOpen
+    shouldOpen
+      ? translations[lang].menuClose
+      : translations[lang].menuOpen
   );
 }
 
-/* Load the personal portrait only when the file exists. */
-function loadPortrait() {
-  if (!portraitImage) return;
+function setupPortrait() {
+  const image = document.getElementById("portraitImage");
+  const placeholder = document.getElementById("portraitPlaceholder");
 
-  portraitImage.addEventListener("load", () => {
-    portraitImage.hidden = false;
+  if (!image || !placeholder) return;
 
-    if (portraitPlaceholder) {
-      portraitPlaceholder.hidden = true;
-    }
-  });
+  function showPlaceholder() {
+    image.hidden = true;
+    placeholder.hidden = false;
+  }
 
-  portraitImage.addEventListener("error", () => {
-    portraitImage.hidden = true;
+  function showImage() {
+    image.hidden = false;
+    placeholder.hidden = true;
+  }
 
-    if (portraitPlaceholder) {
-      portraitPlaceholder.hidden = false;
-    }
-  });
+  image.addEventListener("load", showImage);
+  image.addEventListener("error", showPlaceholder);
 
-  if (portraitImage.complete) {
-    if (portraitImage.naturalWidth > 0) {
-      portraitImage.hidden = false;
-
-      if (portraitPlaceholder) {
-        portraitPlaceholder.hidden = true;
-      }
-    } else {
-      portraitImage.hidden = true;
-    }
+  if (image.complete && image.naturalWidth > 0) {
+    showImage();
+  } else if (image.complete && image.naturalWidth === 0) {
+    showPlaceholder();
   }
 }
 
-/* Footer year. */
-function setCurrentYear() {
+function setupNavigation() {
+  const nav = document.getElementById("mainNav");
+  const menuButton = document.getElementById("menuToggle");
+
+  if (menuButton) {
+    menuButton.addEventListener("click", toggleMenu);
+  }
+
+  if (nav) {
+    nav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+  }
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!nav || !menuButton || !nav.classList.contains("is-open")) {
+      return;
+    }
+
+    if (!nav.contains(event.target) && !menuButton.contains(event.target)) {
+      closeMenu();
+    }
+  });
+}
+
+function setupControls() {
+  const languageButton = document.getElementById("languageToggle");
+  const themeButton = document.getElementById("themeToggle");
+
+  if (languageButton) {
+    languageButton.addEventListener("click", () => {
+      const nextLanguage = root.lang === "ar" ? "en" : "ar";
+      setLanguage(nextLanguage);
+    });
+  }
+
+  if (themeButton) {
+    themeButton.addEventListener("click", () => {
+      const currentTheme = root.getAttribute("data-theme");
+      setTheme(currentTheme === "dark" ? "light" : "dark");
+    });
+  }
+}
+
+function setupFooterYear() {
   const yearElement = document.getElementById("currentYear");
 
   if (yearElement) {
@@ -309,61 +384,21 @@ function setCurrentYear() {
   }
 }
 
-/* Bind interactive controls. */
-languageToggle.addEventListener("click", () => {
-  setLanguage(currentLanguage === "ar" ? "en" : "ar");
-});
-
-themeToggle.addEventListener("click", () => {
-  setTheme(currentTheme === "dark" ? "light" : "dark");
-});
-
-menuToggle.addEventListener("click", toggleMenu);
-
-mainNav.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", closeMenu);
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    closeMenu();
-  }
-});
-
-window.addEventListener("resize", () => {
-  if (window.innerWidth > 700) {
-    closeMenu();
-  }
-});
-
-/* Initialize the site. */
 function initializePortfolio() {
-  let savedLanguage = "ar";
-  let savedTheme = "dark";
+  const savedLanguage = safeGet("ahmad-portfolio-language");
+  const savedTheme = safeGet("ahmad-portfolio-theme");
 
-  try {
-    const languagePreference = localStorage.getItem(
-      "ahmad-portfolio-language"
-    );
-    const themePreference = localStorage.getItem(
-      "ahmad-portfolio-theme"
-    );
+  setLanguage(savedLanguage || "ar");
+  setTheme(savedTheme || "dark");
 
-    if (["ar", "en"].includes(languagePreference)) {
-      savedLanguage = languagePreference;
-    }
-
-    if (["dark", "light"].includes(themePreference)) {
-      savedTheme = themePreference;
-    }
-  } catch (_) {
-    // Use the defaults when browser storage is unavailable.
-  }
-
-  setTheme(savedTheme);
-  setLanguage(savedLanguage);
-  loadPortrait();
-  setCurrentYear();
+  setupControls();
+  setupNavigation();
+  setupPortrait();
+  setupFooterYear();
 }
 
-initializePortfolio();
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initializePortfolio);
+} else {
+  initializePortfolio();
+}
