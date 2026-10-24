@@ -2209,3 +2209,55 @@ html[lang="en"] .brand-strip-inner span::before {
   }
 }
 
+
+/* Final layout fixes */
+.site-header {
+  display: block;
+}
+
+.site-header > .header-inner {
+  min-height: inherit;
+}
+
+@media (max-width: 700px) {
+  .site-header > .header-inner {
+    min-height: 76px;
+    display: flex;
+  }
+
+  .site-header .main-nav {
+    z-index: 30;
+  }
+
+  .site-header .menu-toggle {
+    order: 3;
+  }
+
+  .site-header .header-actions {
+    order: 2;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-visual {
+    margin-inline: auto;
+  }
+
+  .portfolio-socials a {
+    max-width: 100%;
+  }
+
+  .footer-inner {
+    padding-block: 20px;
+  }
+}
+
+@media (min-width: 701px) {
+  .site-header > .header-inner {
+    display: flex;
+  }
+}
+
+
