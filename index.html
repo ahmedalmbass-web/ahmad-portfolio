@@ -19,15 +19,17 @@
   <link rel="stylesheet" href="css/style.css">
 
   <style>
-    :root {
+    
+:root {
   --portfolio-gold: #10B981;
-  --portfolio-green: #087F5B;
+  --portfolio-green: #34D399;
 }
 
 html[data-theme="light"] {
   --portfolio-gold: #087F5B;
   --portfolio-green: #066849;
 }
+
 
     html { scroll-behavior: smooth; }
     body { font-family: "Cairo", sans-serif; }
@@ -45,7 +47,7 @@ html[data-theme="light"] {
       align-items: center;
       justify-content: center;
       padding: 10px 15px;
-      border: 1px solid rgba(16,185,129,.5);
+      border: 1px solid var(--border);
       border-radius: 999px;
       color: inherit;
       text-decoration: none;
@@ -60,7 +62,7 @@ html[data-theme="light"] {
 
     .portfolio-project {
       overflow: hidden;
-      border: 1px solid rgba(16,185,129,.24);
+      border: 1px solid var(--border);
       border-radius: 18px;
       transition: transform .25s ease, border-color .25s ease;
     }
