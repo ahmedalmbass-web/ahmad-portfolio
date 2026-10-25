@@ -253,12 +253,12 @@ function setTheme(theme) {
     );
   }
 
-  const themeColor = document.querySelector('meta[name="theme-color"]');
+    const themeColor = document.querySelector('meta[name="theme-color"]');
 
   if (themeColor) {
     themeColor.setAttribute(
       "content",
-      selectedTheme === "dark" ? "#101712" : "#f5f3ec"
+      selectedTheme === "dark" ? "#0B100E" : "#F4F8F5"
     );
   }
 
