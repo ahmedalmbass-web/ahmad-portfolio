@@ -58,7 +58,7 @@ const translations = {
     catRestaurant: "موقع مطعم",
     catCafe: "موقع كافيه",
     catBooking: "منصة للحجوزات والمواعيد",
-    meeadStatus: "قيد الاستكمال",
+    
     viewProject: "استكشف المشروع ↗",
     projectsFootnote: "تعرض البطاقات أسماء المشاريع ووصفها؛ افتح الروابط لمشاهدة المواقع الفعلية.",
 
@@ -136,7 +136,7 @@ const translations = {
     catRestaurant: "Restaurant Website",
     catCafe: "Cafe Website",
     catBooking: "Booking & Appointment Platform",
-    meeadStatus: "In Progress",
+    
     viewProject: "Explore Project ↗",
     projectsFootnote: "These cards introduce the projects. Open each link to explore the actual website.",
 
