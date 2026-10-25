@@ -2563,3 +2563,223 @@ html[lang="en"] .brand-strip-inner span::before {
 }
 
 
+/* =========================================
+   AHMAD — EMERALD & CHARCOAL BRAND IDENTITY
+========================================= */
+
+/* Dark theme */
+:root {
+  color-scheme: dark;
+
+  --bg: #0B100E;
+  --bg-soft: #101815;
+  --surface: #151F1A;
+  --surface-hover: #1B2B23;
+
+  --text: #F0F7F3;
+  --muted: #A4B5AB;
+
+  --gold: #10B981;
+  --gold-soft: #34D399;
+  --green: #10B981;
+
+  --border: rgba(52, 211, 153, 0.18);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.30);
+  --header-bg: rgba(11, 16, 14, 0.88);
+}
+
+/* Light theme */
+html[data-theme="light"] {
+  color-scheme: light;
+
+  --bg: #F4F8F5;
+  --bg-soft: #E9F1EC;
+  --surface: #FFFFFF;
+  --surface-hover: #EAF5EE;
+
+  --text: #17231D;
+  --muted: #607168;
+
+  --gold: #087F5B;
+  --gold-soft: #066849;
+  --green: #087F5B;
+
+  --border: rgba(8, 127, 91, 0.18);
+  --shadow: 0 24px 70px rgba(19, 57, 40, 0.10);
+  --header-bg: rgba(244, 248, 245, 0.92);
+}
+
+/* Selection and keyboard focus */
+::selection {
+  background: var(--gold);
+  color: #FFFFFF;
+}
+
+:focus-visible {
+  outline-color: var(--gold);
+}
+
+/* Emerald atmosphere */
+.page-glow {
+  background:
+    radial-gradient(
+      ellipse at 78% 16%,
+      rgba(16, 185, 129, 0.17),
+      transparent 43%
+    ),
+    radial-gradient(
+      ellipse at 12% 38%,
+      rgba(16, 185, 129, 0.07),
+      transparent 34%
+    );
+}
+
+/* Brand mark */
+.brand-mark {
+  background: var(--gold);
+  color: #07130E;
+}
+
+/* Primary buttons */
+.button-primary,
+.btn-primary {
+  background: var(--gold);
+  color: #FFFFFF;
+}
+
+.button-primary:hover,
+.btn-primary:hover {
+  background: var(--gold-soft);
+  box-shadow: 0 12px 32px rgba(16, 185, 129, 0.20);
+}
+
+.button-secondary:hover,
+.btn-secondary:hover,
+.main-nav .nav-contact:hover,
+.tool-button:hover,
+.icon-button:hover,
+.back-top:hover,
+.back-to-top:hover {
+  border-color: var(--gold);
+}
+
+/* Emerald details and borders */
+.status-dot,
+.floating-card-dot {
+  background: var(--green);
+  box-shadow: 0 0 0 5px rgba(16, 185, 129, 0.13);
+}
+
+.orbit {
+  border-color: rgba(16, 185, 129, 0.22);
+}
+
+.ring-b {
+  border-color: rgba(16, 185, 129, 0.30);
+}
+
+.service-card:hover {
+  border-color: rgba(16, 185, 129, 0.55);
+}
+
+.portfolio-project {
+  border-color: rgba(16, 185, 129, 0.20);
+}
+
+.portfolio-project:hover {
+  border-color: rgba(16, 185, 129, 0.70);
+}
+
+/* Project card details */
+.portfolio-project-link:hover {
+  color: var(--gold-soft);
+}
+
+.portfolio-project-preview-link:focus-visible {
+  outline-color: var(--gold);
+}
+
+/* Contact decoration */
+.contact-decoration {
+  background:
+    radial-gradient(
+      circle,
+      rgba(16, 185, 129, 0.12),
+      transparent 65%
+    );
+}
+
+/* Emerald hover glow */
+.project-open {
+  background: var(--gold);
+  color: #07130E;
+}
+
+/* Keep transitions smooth when switching themes */
+body,
+.site-header,
+.portfolio-project,
+.service-card,
+.tool-button,
+.icon-button {
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    border-color var(--transition),
+    box-shadow var(--transition);
+}
+
+/* Final emerald contrast and consistency fixes */
+
+:root {
+  --portfolio-gold: #10B981;
+  --portfolio-emerald: #10B981;
+}
+
+html[data-theme="light"] {
+  --portfolio-gold: #087F5B;
+  --portfolio-emerald: #087F5B;
+}
+
+/* Primary buttons: readable text in both themes */
+.button-primary,
+.btn-primary,
+.project-open {
+  background: #087F5B;
+  color: #FFFFFF;
+  border-color: #087F5B;
+}
+
+.button-primary:hover,
+.btn-primary:hover,
+.project-open:hover {
+  background: #066849;
+  border-color: #066849;
+  color: #FFFFFF;
+}
+
+/* Links and interactive accents */
+a:hover,
+.portfolio-project-link:hover,
+.title-accent {
+  color: var(--portfolio-emerald);
+}
+
+/* Consistent emerald borders */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--portfolio-emerald);
+}
+
+/* Remove remaining old gold tones from decorative areas */
+.hero-visual,
+.portrait-placeholder {
+  border-color: var(--border);
+}
+
+.floating-star {
+  color: var(--gold-soft);
+}
+
+
