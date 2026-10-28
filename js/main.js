@@ -58,6 +58,7 @@ const translations = {
     catRestaurant: "موقع مطعم",
     catCafe: "موقع كافيه",
     catBooking: "منصة للحجوزات والمواعيد",
+    catBranding: "تصميم جرافيكي وهوية بصرية",
     
     viewProject: "استكشف المشروع ↗",
     projectsFootnote: "تعرض البطاقات أسماء المشاريع ووصفها؛ افتح الروابط لمشاهدة المواقع الفعلية.",
@@ -136,6 +137,7 @@ const translations = {
     catRestaurant: "Restaurant Website",
     catCafe: "Cafe Website",
     catBooking: "Booking & Appointment Platform",
+    catBranding: "Graphic Design & Visual Identity",
     
     viewProject: "Explore Project ↗",
     projectsFootnote: "These cards introduce the projects. Open each link to explore the actual website.",
