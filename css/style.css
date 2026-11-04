@@ -3180,4 +3180,7 @@ html[data-theme="light"] .floating-card {
   }
 }
 
+[hidden] {
+  display: none !important;
+}
 
