@@ -1,161 +1,19 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#0B100E">
-
-  <title>أحمد | مصمم واجهات ومواقع وهوية رقمية</title>
   <meta name="description" content="الموقع الشخصي لأحمد، مصمم واجهات ومواقع وهوية رقمية. اكتشف أعماله ومشاريعه الرقمية وتواصل معه لمناقشة مشروعك القادم.">
   <meta property="og:title" content="أحمد | تصميم رقمي بهوية مميزة">
   <meta property="og:description" content="تصميم واجهات ومواقع وتجارب رقمية تجمع بين الجمال والوضوح.">
   <meta property="og:type" content="website">
+  <title>أحمد | مصمم واجهات ومواقع وهوية رقمية</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="css/style.css">
-
-  <style>
-    
-:root {
-  --portfolio-gold: #10B981;
-  --portfolio-green: #34D399;
-}
-
-html[data-theme="light"] {
-  --portfolio-gold: #087F5B;
-  --portfolio-green: #066849;
-}
-
-
-    html { scroll-behavior: smooth; }
-    body { font-family: "Cairo", sans-serif; }
-    html[lang="en"] body { font-family: "Manrope", sans-serif; }
-
-    .portfolio-socials {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 22px;
-    }
-
-    .portfolio-socials a {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px 15px;
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      color: inherit;
-      text-decoration: none;
-      font-size: 13px;
-      transition: .25s ease;
-    }
-
-    .portfolio-socials a:hover {
-      transform: translateY(-3px);
-      background: rgba(16,185,129,.12);
-    }
-
-    .portfolio-project {
-      overflow: hidden;
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      transition: transform .25s ease, border-color .25s ease;
-    }
-
-    .portfolio-project:hover {
-      transform: translateY(-5px);
-      border-color: var(--portfolio-gold);
-    }
-
-    .portfolio-project-art {
-      min-height: 170px;
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      color: #f7f3e9;
-      background:
-        radial-gradient(circle at 80% 20%, rgba(16,185,129,.3), transparent 38%),
-        linear-gradient(135deg, #244f40, #101712);
-    }
-
-    .portfolio-project-art .project-number {
-      font: 500 12px "Manrope", sans-serif;
-      letter-spacing: 2px;
-      color: var(--portfolio-gold);
-    }
-
-    .portfolio-project-art h3 {
-      margin: 18px 0 0;
-      font-size: 25px;
-    }
-
-    .portfolio-project-info { padding: 20px; }
-    .portfolio-project-info p { line-height: 1.9; }
-
-    .portfolio-project-link {
-      display: inline-block;
-      margin-top: 8px;
-      color: inherit;
-      font-weight: 700;
-      text-underline-offset: 5px;
-    }
-
-    .portfolio-status {
-      display: inline-block;
-      margin-top: 8px;
-      padding: 5px 11px;
-      border-radius: 999px;
-      background: rgba(16,185,129,.13);
-      color: var(--portfolio-gold);
-      font-size: 12px;
-    }
-
-    .portfolio-hero-social-label {
-      margin-top: 28px;
-      opacity: .7;
-      font: 500 11px "Manrope", sans-serif;
-      letter-spacing: 2px;
-    }
-
-    .portfolio-section-copy {
-      max-width: 720px;
-      line-height: 2;
-    }
-
-    .portfolio-contact-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 24px;
-    }
-
-    .portfolio-contact-actions a { text-decoration: none; }
-
-    .portfolio-footer {
-      padding: 28px 0;
-      text-align: center;
-    }
-
-    .portfolio-footer p { line-height: 1.9; }
-
-    .portfolio-text-link {
-      color: inherit;
-      text-underline-offset: 5px;
-    }
-
-    @media (max-width: 600px) {
-      .portfolio-project-art { min-height: 140px; }
-      .portfolio-project-art h3 { font-size: 21px; }
-      .portfolio-socials a { font-size: 12px; }
-    }
-  </style>
-
   <script src="js/main.js" defer></script>
 </head>
 
@@ -167,24 +25,22 @@ html[data-theme="light"] {
         <span class="brand-name">AHMAD<span> / DIGITAL DESIGN</span></span>
       </a>
 
-      <button id="menuToggle" class="menu-toggle" type="button"
-        aria-label="فتح القائمة" aria-expanded="false" aria-controls="mainNav">
+      <button id="menuToggle" class="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span>
       </button>
 
       <nav id="mainNav" class="main-nav" aria-label="التنقل الرئيسي">
         <a href="#home" data-i18n="navHome">الرئيسية</a>
-        <a href="#about" data-i18n="navAbout">من أنا</a>
         <a href="#services" data-i18n="navServices">خدماتي</a>
+        <a href="#about" data-i18n="navAbout">من أنا</a>
+        <a href="#process" data-i18n="navProcess">طريقة العمل</a>
         <a href="#projects" data-i18n="navProjects">أعمالي</a>
         <a href="#contact" data-i18n="navContact">تواصل معي</a>
       </nav>
 
       <div class="header-actions">
-        <button id="languageToggle" class="icon-button" type="button"
-          aria-label="تغيير اللغة">EN</button>
-        <button id="themeToggle" class="icon-button" type="button"
-          aria-label="تغيير المظهر">
+        <button id="languageToggle" class="icon-button" type="button" aria-label="تغيير اللغة">EN</button>
+        <button id="themeToggle" class="icon-button" type="button" aria-label="تغيير المظهر">
           <span id="themeIcon" aria-hidden="true">☼</span>
         </button>
       </div>
@@ -197,15 +53,12 @@ html[data-theme="light"] {
         <div class="hero-content">
           <p class="eyebrow" data-i18n="heroEyebrow">تصميم رقمي برؤية مختلفة</p>
           <p class="hero-kicker" data-i18n="heroKicker">مرحبًا، أنا</p>
-
           <h1 class="hero-title">
             <span data-i18n="heroTitle">أحمد، أصنع حضورك الرقمي</span>
             <span class="hero-accent" data-i18n="heroAccent">بأناقة ووضوح.</span>
           </h1>
-
-          <p class="hero-description" data-i18n="heroDescription">
-            مصمم واجهات ومواقع وهوية رقمية. أهتم بتحويل الأفكار إلى تجارب رقمية أنيقة وواضحة وسهلة الاستخدام.
-          </p>
+          <p class="hero-description" data-i18n="heroDescription">مصمم واجهات ومواقع وهوية رقمية. أهتم بتحويل الأفكار إلى تجارب رقمية أنيقة وواضحة وسهلة الاستخدام.</p>
+          <p class="hero-audience" data-i18n="heroAudience">أساعد رواد الأعمال، وأصحاب المشاريع الناشئة، والمتاجر والعلامات التجارية، والشركات على بناء حضور رقمي احترافي يعكس قيمة أعمالهم ويصل إلى جمهورهم بوضوح.</p>
 
           <div class="hero-actions">
             <a class="btn btn-primary" href="#projects" data-i18n="exploreWork">استكشف أعمالي</a>
@@ -213,7 +66,6 @@ html[data-theme="light"] {
           </div>
 
           <p class="hero-note" data-i18n="heroNote">كل فكرة تستحق حضورًا رقميًا يليق بها.</p>
-
           <p class="portfolio-hero-social-label">SOCIAL PRESENCE</p>
           <div class="portfolio-socials">
             <a href="https://www.instagram.com/jfz4l/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
@@ -223,42 +75,21 @@ html[data-theme="light"] {
           </div>
         </div>
 
-        <div class="hero-visual">
-  <div class="portrait-frame">
-
-    <div id="portraitPlaceholder" class="portrait-placeholder">
-      <span class="portrait-monogram">A<span>.</span></span>
-      <span class="portrait-label" data-i18n="portraitLabel">
-        تصميم • تقنية • إبداع
-      </span>
-    </div>
-
-    <img
-      id="portraitImage"
-      class="portrait-image"
-      src="assets/profile.png"
-      alt="Ahmad - Personal Portrait"
-      loading="eager"
-    >
-
-    <div class="portrait-caption">
-      <span data-i18n="portraitCaption">مساحة للأفكار الكبيرة</span>
-      <span class="portrait-caption-line"></span>
-    </div>
-
-  </div>
-
-  <div class="floating-card">
-    <span class="floating-card-dot"></span>
-    <span data-i18n="floatingCard">نحو تجربة رقمية أفضل</span>
-  </div>
-</div>
-
-            
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-orbit hero-orbit-one"></div>
+          <div class="hero-orbit hero-orbit-two"></div>
+          <div class="hero-monogram">A<span>.</span></div>
+          <div class="hero-visual-caption">
+            <span>DESIGN WITH PURPOSE</span>
+            <span class="visual-caption-line"></span>
+          </div>
+          <div class="hero-visual-index">01 — 06</div>
+        </div>
+      </div>
 
       <div class="container hero-bottom">
         <span data-i18n="scrollText">اكتشف المزيد</span>
-        <a href="#about" aria-label="انتقل إلى قسم من أنا">↓</a>
+        <a href="#services" aria-label="انتقل إلى الخدمات">↓</a>
       </div>
     </section>
 
@@ -271,79 +102,102 @@ html[data-theme="light"] {
       </div>
     </section>
 
-    <section class="section about-section" id="about">
-      <div class="container about-grid">
-        <div class="section-index">
-          <span data-i18n="aboutIndex">01 / نبذة</span>
-          <span class="index-line"></span>
-        </div>
-
-        <div class="about-content">
-          <p class="eyebrow" data-i18n="aboutEyebrow">من أنا</p>
-          <h2 class="section-title" data-i18n="aboutTitle">
-            أحوّل الأفكار إلى تجارب رقمية واضحة.
-          </h2>
-          <p class="about-lead" data-i18n="aboutLead">
-            أنا أحمد، مهتم بتصميم الواجهات والمواقع وبناء حضور رقمي يعكس شخصية كل مشروع.
-          </p>
-          <p class="portfolio-section-copy" data-i18n="aboutDescription">
-            أركز على التوازن بين الشكل والوظيفة، من ترتيب المحتوى واختيار الألوان إلى سهولة التنقل وتجربة الاستخدام على مختلف الشاشات.
-          </p>
-          <a class="portfolio-text-link" href="#contact" data-i18n="aboutCta">
-            تحدث معي عن فكرتك ↗
-          </a>
-        </div>
-      </div>
-    </section>
-
     <section class="section services-section" id="services">
       <div class="container">
         <div class="section-heading">
           <div class="section-index">
-            <span data-i18n="servicesIndex">02 / الخدمات</span>
+            <span data-i18n="servicesIndex">01 / الخدمات</span>
             <span class="index-line"></span>
           </div>
           <p class="eyebrow" data-i18n="servicesEyebrow">ما أقدمه</p>
-          <h2 class="section-title" data-i18n="servicesTitle">
-            حلول رقمية تبدأ من الفكرة.
-          </h2>
+          <h2 class="section-title" data-i18n="servicesTitle">حلول رقمية تبدأ من الفكرة.</h2>
+          <p class="section-intro" data-i18n="servicesIntro">أجمع بين التفكير البصري والتنفيذ العملي لبناء تجربة واضحة تخدم هدف المشروع.</p>
         </div>
 
         <div class="services-grid">
           <article class="service-card">
-            <span class="service-number">01</span>
-            <div class="service-icon" aria-hidden="true">✳</div>
+            <span class="service-number">01</span><div class="service-icon" aria-hidden="true">✳</div>
             <h3 data-i18n="serviceOneTitle">تصميم واجهات المستخدم</h3>
-            <p data-i18n="serviceOneDescription">
-              واجهات واضحة ومتناسقة تساعد الزائر على الوصول لما يحتاجه بسهولة.
-            </p>
+            <p data-i18n="serviceOneDescription">واجهات واضحة ومتناسقة تساعد الزائر على الوصول لما يحتاجه بسهولة.</p>
           </article>
-
           <article class="service-card">
-            <span class="service-number">02</span>
-            <div class="service-icon" aria-hidden="true">⌘</div>
+            <span class="service-number">02</span><div class="service-icon" aria-hidden="true">⌘</div>
             <h3 data-i18n="serviceTwoTitle">تصميم وتطوير المواقع</h3>
-            <p data-i18n="serviceTwoDescription">
-              مواقع متجاوبة تعرض الخدمات والمحتوى بصورة منظمة على مختلف الأجهزة.
-            </p>
+            <p data-i18n="serviceTwoDescription">مواقع متجاوبة تعرض الخدمات والمحتوى بصورة منظمة على مختلف الأجهزة.</p>
           </article>
-
           <article class="service-card">
-            <span class="service-number">03</span>
-            <div class="service-icon" aria-hidden="true">◈</div>
+            <span class="service-number">03</span><div class="service-icon" aria-hidden="true">◈</div>
             <h3 data-i18n="serviceThreeTitle">الهوية الرقمية</h3>
-            <p data-i18n="serviceThreeDescription">
-              تنسيق بصري يعبّر عن شخصية المشروع ويحافظ على اتساق حضوره الرقمي.
-            </p>
+            <p data-i18n="serviceThreeDescription">تنسيق بصري يعبّر عن شخصية المشروع ويحافظ على اتساق حضوره الرقمي.</p>
           </article>
-
           <article class="service-card">
-            <span class="service-number">04</span>
-            <div class="service-icon" aria-hidden="true">↗</div>
+            <span class="service-number">04</span><div class="service-icon" aria-hidden="true">↗</div>
             <h3 data-i18n="serviceFourTitle">تحسين تجربة الاستخدام</h3>
-            <p data-i18n="serviceFourDescription">
-              الاهتمام بوضوح المحتوى وسهولة الحركة بين أقسام الموقع.
-            </p>
+            <p data-i18n="serviceFourDescription">الاهتمام بوضوح المحتوى وسهولة الحركة بين أقسام الموقع.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container about-layout">
+        <div class="about-visual">
+          <div class="about-photo-frame">
+            <div id="portraitPlaceholder" class="portrait-placeholder">
+              <span class="portrait-monogram">A<span>.</span></span>
+              <span class="portrait-label" data-i18n="portraitLabel">تصميم • تقنية • إبداع</span>
+            </div>
+            <img id="portraitImage" class="portrait-image" src="assets/profile.png" alt="صورة أحمد" loading="lazy">
+            <div class="portrait-caption">
+              <span data-i18n="portraitCaption">مساحة للأفكار الكبيرة</span>
+              <span class="portrait-caption-line"></span>
+            </div>
+          </div>
+          <span class="about-visual-note" data-i18n="aboutVisualNote">A CREATIVE MINDSET</span>
+        </div>
+
+        <div class="about-content">
+          <div class="section-index">
+            <span data-i18n="aboutIndex">02 / نبذة</span><span class="index-line"></span>
+          </div>
+          <p class="eyebrow" data-i18n="aboutEyebrow">من أنا</p>
+          <h2 class="section-title" data-i18n="aboutTitle">أحوّل الأفكار إلى تجارب رقمية واضحة.</h2>
+          <p class="about-lead" data-i18n="aboutLead">أنا أحمد، مهتم بتصميم الواجهات والمواقع وبناء حضور رقمي يعكس شخصية كل مشروع.</p>
+          <p class="portfolio-section-copy" data-i18n="aboutDescription">أركز على التوازن بين الشكل والوظيفة، من ترتيب المحتوى واختيار الألوان إلى سهولة التنقل وتجربة الاستخدام على مختلف الشاشات.</p>
+          <a class="portfolio-text-link" href="#contact" data-i18n="aboutCta">تحدث معي عن فكرتك ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-heading">
+          <div class="section-index"><span data-i18n="processIndex">03 / طريقة العمل</span><span class="index-line"></span></div>
+          <p class="eyebrow" data-i18n="processEyebrow">من الفكرة إلى الإطلاق</p>
+          <h2 class="section-title" data-i18n="processTitle">خطوات واضحة، ونتيجة مدروسة.</h2>
+          <p class="section-intro" data-i18n="processIntro">لكل مشروع احتياجاته، لكنني أتعامل مع العمل بمراحل منظمة تساعد على وضوح الرؤية من البداية.</p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <span class="process-number">01</span><span class="process-symbol">◎</span>
+            <h3 data-i18n="processOneTitle">الفهم والاستكشاف</h3>
+            <p data-i18n="processOneDescription">أتعرف على فكرة المشروع والجمهور والهدف المطلوب قبل البدء بالتصميم.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-number">02</span><span class="process-symbol">◇</span>
+            <h3 data-i18n="processTwoTitle">التخطيط والتصميم</h3>
+            <p data-i18n="processTwoDescription">أرتب المحتوى وأحدد الاتجاه البصري وبنية الصفحات وتجربة التنقل.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-number">03</span><span class="process-symbol">⌘</span>
+            <h3 data-i18n="processThreeTitle">التنفيذ والتطوير</h3>
+            <p data-i18n="processThreeDescription">أحوّل التصميم إلى تجربة متجاوبة وأهتم بالتفاصيل عبر أحجام الشاشات.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-number">04</span><span class="process-symbol">↗</span>
+            <h3 data-i18n="processFourTitle">المراجعة والإطلاق</h3>
+            <p data-i18n="processFourDescription">أراجع الصفحات والروابط والتفاصيل الأساسية قبل إتاحة المشروع.</p>
           </article>
         </div>
       </div>
@@ -351,291 +205,158 @@ html[data-theme="light"] {
 
     <section class="section projects-section" id="projects">
       <div class="container">
-        <div class="section-index">
-          <span data-i18n="projectsIndex">03 / مختارات من الأعمال</span>
-          <span class="index-line"></span>
-        </div>
-
+        <div class="section-index"><span data-i18n="projectsIndex">04 / مختارات من الأعمال</span><span class="index-line"></span></div>
         <div class="section-heading projects-heading">
           <div>
             <p class="eyebrow" data-i18n="projectsEyebrow">المشاريع</p>
-            <h2 class="section-title" data-i18n="projectsTitle">
-              أفكار تحولت إلى مشاريع رقمية.
-            </h2>
+            <h2 class="section-title" data-i18n="projectsTitle">أفكار تحولت إلى مشاريع رقمية.</h2>
           </div>
-          <p class="portfolio-section-copy" data-i18n="projectsIntro">
-            مجموعة من المواقع والمشاريع التي يمكنك استكشافها عبر روابطها المباشرة.
-          </p>
+          <p class="portfolio-section-copy" data-i18n="projectsIntro">مجموعة من المواقع والمشاريع التي يمكنك استكشافها عبر روابطها المباشرة.</p>
         </div>
 
         <div class="projects-grid">
-          
-<article class="portfolio-project">
-  <div class="portfolio-project-art has-preview">
-    <a
-      class="portfolio-project-preview-link"
-      href="https://khial-abaya.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="زيارة موقع خيال للعبايات"
-    >
-      <img
-        src="assets/projects/khial-abaya.png"
-        alt="معاينة الموقع الإلكتروني لخيال للعبايات"
-        loading="lazy"
-      >
-    </a>
-    <span class="project-number">01 / FASHION</span>
-    <h3>Khial Abaya</h3>
-  </div>
-  <div class="portfolio-project-info">
-    <p data-i18n="catFashion">متجر أزياء وعبايات</p>
-    <a class="portfolio-project-link" href="https://khial-abaya.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
-  </div>
-</article>
+          <article class="portfolio-project">
+            <div class="portfolio-project-art has-preview">
+              <a class="portfolio-project-preview-link" href="https://khial-abaya.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع خيال للعبايات">
+                <img src="assets/projects/khial-abaya.png" alt="معاينة الموقع الإلكتروني لخيال للعبايات" loading="lazy">
+              </a>
+              <span class="project-number">01 / FASHION</span><h3>Khial Abaya</h3>
+            </div>
+            <div class="portfolio-project-info">
+              <p class="project-category" data-i18n="catFashion">متجر أزياء وعبايات</p>
+              <p class="project-description" data-i18n="descKhial">واجهة متجر لعرض العبايات وتنظيم المنتجات، مع تسهيل إرسال الطلب عبر واتساب.</p>
+              <a class="portfolio-project-link" href="https://khial-abaya.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
+            </div>
+          </article>
 
+          <article class="portfolio-project">
+            <div class="portfolio-project-art has-preview">
+              <a class="portfolio-project-preview-link" href="https://viora-stores.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة متجر Viora للإكسسوارات">
+                <img src="assets/projects/viora.png" alt="معاينة متجر Viora للإكسسوارات" loading="lazy">
+              </a>
+              <span class="project-number">02 / ACCESSORIES</span><h3>Viora</h3>
+            </div>
+            <div class="portfolio-project-info">
+              <p class="project-category" data-i18n="catAccessories">متجر إكسسوارات</p>
+              <p class="project-description" data-i18n="descViora">تجربة متجر للإكسسوارات تعرض المنتجات وتتيح تجهيز الطلب وإرساله عبر واتساب.</p>
+              <a class="portfolio-project-link" href="https://viora-stores.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
+            </div>
+          </article>
 
-          
-<article class="portfolio-project">
-  <div class="portfolio-project-art has-preview">
-    <a
-      class="portfolio-project-preview-link"
-      href="https://viora-stores.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="زيارة متجر Viora للإكسسوارات"
-    >
-      <img
-        src="assets/projects/viora.png"
-        alt="معاينة متجر Viora للإكسسوارات"
-        loading="lazy"
-      >
-    </a>
-    <span class="project-number">02 / ACCESSORIES</span>
-    <h3>Viora</h3>
-  </div>
-  <div class="portfolio-project-info">
-    <p data-i18n="catAccessories">متجر إكسسوارات</p>
-    <a class="portfolio-project-link" href="https://viora-stores.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
-  </div>
-</article>
+          <article class="portfolio-project">
+            <div class="portfolio-project-art has-preview">
+              <a class="portfolio-project-preview-link" href="https://panda-requests.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع Panda للطلبات الرقمية">
+                <img src="assets/projects/panda.png" alt="معاينة موقع Panda للطلبات الرقمية" loading="lazy">
+              </a>
+              <span class="project-number">03 / DIGITAL</span><h3>Panda</h3>
+            </div>
+            <div class="portfolio-project-info">
+              <p class="project-category" data-i18n="catDigital">مشروع طلبات رقمي</p>
+              <p class="project-description" data-i18n="descPanda">مشروع رقمي مخصص للطلبات، مع واجهة تقدم محتواه بطريقة منظمة.</p>
+              <a class="portfolio-project-link" href="https://panda-requests.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
+            </div>
+          </article>
 
+          <article class="portfolio-project">
+            <div class="portfolio-project-art has-preview">
+              <a class="portfolio-project-preview-link" href="https://chalets-ibb.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع منتجع إب">
+                <img src="assets/projects/ibb-resort.png" alt="معاينة موقع منتجع إب" loading="lazy">
+              </a>
+              <span class="project-number">04 / RESORT</span><h3>Ibb Resort</h3>
+            </div>
+            <div class="portfolio-project-info">
+              <p class="project-category" data-i18n="catResort">موقع منتجع</p>
+              <p class="project-description" data-i18n="descResort">موقع تعريفي يعرض المنتجع ويقدم للزائر تصورًا عن المكان وخدماته.</p>
+              <a class="portfolio-project-link" href="https://chalets-ibb.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
+            </div>
+          </article>
 
-          
-<article class="portfolio-project">
-  <div class="portfolio-project-art has-preview">
-    <a
-      class="portfolio-project-preview-link"
-      href="https://panda-requests.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="زيارة موقع Panda للطلبات الرقمية"
-    >
-      <img
-        src="assets/projects/panda.png"
-        alt="معاينة موقع Panda للطلبات الرقمية"
-        loading="lazy"
-      >
-    </a>
-    <span class="project-number">03 / DIGITAL</span>
-    <h3>Panda</h3>
-  </div>
-  <div class="portfolio-project-info">
-    <p data-i18n="catDigital">مشروع طلبات رقمي</p>
-    <a class="portfolio-project-link" href="https://panda-requests.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
-  </div>
-</article>
+          <article class="portfolio-project">
+            <div class="portfolio-project-art has-preview">
+              <a class="portfolio-project-preview-link" href="https://restaurant-ibb.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع مطعم منتجع إب">
+                <img src="assets/projects/ibb-restaurant.png" alt="معاينة موقع مطعم منتجع إب" loading="lazy">
+              </a>
+              <span class="project-number">05 / RESTAURANT</span><h3>Ibb Restaurant</h3>
+            </div>
+            <div class="portfolio-project-info">
+              <p class="project-category" data-i18n="catRestaurant">موقع مطعم</p>
+              <p class="project-description" data-i18n="descRestaurant">واجهة إلكترونية للمطعم تعرض هويته ومحتواه بصورة مرتبة.</p>
+              <a class="portfolio-project-link" href="https://restaurant-ibb.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
+            </div>
+          </article>
 
-          
-<article class="portfolio-project">
-  <div class="portfolio-project-art has-preview">
-    <a
-      class="portfolio-project-preview-link"
-      href="https://chalets-ibb.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="زيارة موقع منتجع إب"
-    >
-      <img
-        src="assets/projects/ibb-resort.png"
-        alt="معاينة موقع منتجع إب"
-        loading="lazy"
-      >
-    </a>
-    <span class="project-number">04 / RESORT</span>
-    <h3>Ibb Resort</h3>
-  </div>
-  <div class="portfolio-project-info">
-    <p data-i18n="catResort">موقع منتجع</p>
-    <a class="portfolio-project-link"
-      href="https://chalets-ibb.netlify.app/"
-      target="_blank" rel="noopener noreferrer"
-      data-i18n="viewProject">استكشف المشروع ↗</a>
-  </div>
-</article>
+          <article class="portfolio-project">
+            <div class="portfolio-project-art has-preview">
+              <a class="portfolio-project-preview-link" href="https://cafe-ibb.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع كافيه منتجع إب">
+                <img src="assets/projects/ibb-cafe.png" alt="معاينة موقع كافيه منتجع إب" loading="lazy">
+              </a>
+              <span class="project-number">06 / CAFE</span><h3>Ibb Cafe</h3>
+            </div>
+            <div class="portfolio-project-info">
+              <p class="project-category" data-i18n="catCafe">موقع كافيه</p>
+              <p class="project-description" data-i18n="descCafe">موقع للكافيه يقدم محتواه ضمن واجهة متناسقة وسهلة التصفح.</p>
+              <a class="portfolio-project-link" href="https://cafe-ibb.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
+            </div>
+          </article>
 
-<article class="portfolio-project">
-  <div class="portfolio-project-art has-preview">
-    <a
-      class="portfolio-project-preview-link"
-      href="https://restaurant-ibb.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="زيارة موقع مطعم منتجع إب"
-    >
-      <img
-        src="assets/projects/ibb-restaurant.png"
-        alt="معاينة موقع مطعم منتجع إب"
-        loading="lazy"
-      >
-    </a>
-    <span class="project-number">05 / RESTAURANT</span>
-    <h3>Ibb Restaurant</h3>
-  </div>
-  <div class="portfolio-project-info">
-    <p data-i18n="catRestaurant">موقع مطعم</p>
-    <a class="portfolio-project-link"
-      href="https://restaurant-ibb.netlify.app/"
-      target="_blank" rel="noopener noreferrer"
-      data-i18n="viewProject">استكشف المشروع ↗</a>
-  </div>
-</article>
+          <article class="portfolio-project">
+            <div class="portfolio-project-art has-preview">
+              <a class="portfolio-project-preview-link" href="https://meead-system.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة منصة ميعاد للحجوزات">
+                <img src="assets/projects/meead.png" alt="معاينة منصة ميعاد للحجوزات" loading="lazy">
+              </a>
+              <span class="project-number">07 / BOOKING</span><h3>Meead — ميعاد</h3>
+            </div>
+            <div class="portfolio-project-info">
+              <p class="project-category" data-i18n="catBooking">منصة للحجوزات والمواعيد</p>
+              <p class="project-description" data-i18n="descMeead">منصة لتنظيم المواعيد وتسهيل وصول العملاء إلى مقدمي الخدمات.</p>
+              <a class="portfolio-project-link" href="https://meead-system.netlify.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
+            </div>
+          </article>
 
-<article class="portfolio-project">
-  <div class="portfolio-project-art has-preview">
-    <a
-      class="portfolio-project-preview-link"
-      href="https://cafe-ibb.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="زيارة موقع كافيه منتجع إب"
-    >
-      <img
-        src="assets/projects/ibb-cafe.png"
-        alt="معاينة موقع كافيه منتجع إب"
-        loading="lazy"
-      >
-    </a>
-    <span class="project-number">06 / CAFE</span>
-    <h3>Ibb Cafe</h3>
-  </div>
-  <div class="portfolio-project-info">
-    <p data-i18n="catCafe">موقع كافيه</p>
-    <a class="portfolio-project-link"
-      href="https://cafe-ibb.netlify.app/"
-      target="_blank" rel="noopener noreferrer"
-      data-i18n="viewProject">استكشف المشروع ↗</a>
-  </div>
-</article>
-
-<article class="portfolio-project">
-  <div class="portfolio-project-art has-preview">
-    <a
-      class="portfolio-project-preview-link"
-      href="https://meead-system.netlify.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="زيارة منصة ميعاد للحجوزات"
-    >
-      <img
-        src="assets/projects/meead.png"
-        alt="معاينة منصة ميعاد للحجوزات"
-        loading="lazy"
-      >
-    </a>
-    <span class="project-number">07 / BOOKING</span>
-    <h3>Meead — ميعاد</h3>
-  </div>
-  <div class="portfolio-project-info">
-    <p data-i18n="catBooking">منصة للحجوزات والمواعيد</p>
-    
-    <a class="portfolio-project-link"
-      href="https://meead-system.netlify.app/"
-      target="_blank" rel="noopener noreferrer"
-      data-i18n="viewProject">استكشف المشروع ↗</a>
-  </div>
-</article>
-
-          
-<article class="portfolio-project">
-  <div class="portfolio-project-art has-preview">
-    <a
-      class="portfolio-project-preview-link"
-      href="https://osama-rami-portfolio.vercel.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label="زيارة موقع أسامة رامي"
-    >
-      <img
-        src="assets/projects/osama-rami.png"
-        alt="Osama Rami Portfolio"
-        loading="lazy"
-      >
-    </a>
-    <span class="project-number">08 / DESIGN</span>
-    <h3>Osama Rami</h3>
-  </div>
-  <div class="portfolio-project-info">
-    <p data-i18n="catBranding">تصميم جرافيكي وهوية بصرية</p>
-    <a
-      class="portfolio-project-link"
-      href="https://osama-rami-portfolio.vercel.app/"
-      target="_blank"
-      rel="noopener noreferrer"
-      data-i18n="viewProject"
-    >استكشف المشروع ↗</a>
-  </div>
-</article>
-
-
+          <article class="portfolio-project">
+            <div class="portfolio-project-art has-preview">
+              <a class="portfolio-project-preview-link" href="https://osama-rami-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="زيارة موقع أسامة رامي">
+                <img src="assets/projects/osama-rami.png" alt="Osama Rami Portfolio" loading="lazy">
+              </a>
+              <span class="project-number">08 / DESIGN</span><h3>Osama Rami</h3>
+            </div>
+            <div class="portfolio-project-info">
+              <p class="project-category" data-i18n="catBranding">تصميم جرافيكي وهوية بصرية</p>
+              <p class="project-description" data-i18n="descOsama">موقع Portfolio يعرض الأعمال والخدمات ضمن حضور بصري شخصي.</p>
+              <a class="portfolio-project-link" href="https://osama-rami-portfolio.vercel.app/" target="_blank" rel="noopener noreferrer" data-i18n="viewProject">استكشف المشروع ↗</a>
+            </div>
+          </article>
         </div>
 
-        <p class="projects-footnote" data-i18n="projectsFootnote">
-          تعرض البطاقات أسماء المشاريع ووصفها؛ افتح الروابط لمشاهدة المواقع الفعلية.
-        </p>
+        <p class="projects-footnote" data-i18n="projectsFootnote">أوصاف مختصرة للتعريف بطبيعة المشاريع؛ افتح الروابط لمشاهدة المواقع الفعلية.</p>
       </div>
     </section>
 
     <section class="statement-section">
       <div class="container statement-inner">
         <span class="statement-mark" aria-hidden="true">“</span>
-        <h2 data-i18n="statement">
-          التصميم الجيد ليس مجرد شكل جميل، بل تجربة تبقى في الذاكرة.
-        </h2>
+        <h2 data-i18n="statement">التصميم الجيد ليس مجرد شكل جميل، بل تجربة تبقى في الذاكرة.</h2>
       </div>
     </section>
 
     <section class="section contact-section" id="contact">
       <div class="container contact-grid">
-        <div class="section-index">
-          <span data-i18n="contactIndex">04 / تواصل</span>
-          <span class="index-line"></span>
-        </div>
-
+        <div class="section-index"><span data-i18n="contactIndex">05 / تواصل</span><span class="index-line"></span></div>
         <div class="contact-content">
           <p class="eyebrow" data-i18n="contactEyebrow">لديك فكرة؟</p>
-          <h2 class="section-title" data-i18n="contactTitle">
-            لنجعل فكرتك حاضرة على الإنترنت.
-          </h2>
-          <p class="portfolio-section-copy" data-i18n="contactDescription">
-            سواء كنت تبدأ مشروعًا جديدًا أو ترغب في تطوير حضورك الرقمي، يمكنك التواصل معي عبر حسابات التواصل التالية.
-          </p>
-
+          <h2 class="section-title" data-i18n="contactTitle">لنجعل فكرتك حاضرة على الإنترنت.</h2>
+          <p class="portfolio-section-copy" data-i18n="contactDescription">سواء كنت تبدأ مشروعًا جديدًا أو ترغب في تطوير حضورك الرقمي، يمكنك التواصل معي عبر حسابات التواصل التالية.</p>
           <div class="portfolio-contact-actions">
             <a class="btn btn-primary" href="https://wa.me/967774398671" target="_blank" rel="noopener noreferrer" data-i18n="whatsappMe">تواصل عبر واتساب ↗</a>
             <a class="btn btn-secondary" href="https://www.linkedin.com/in/ahmed-al-maqtari-a382b3286/" target="_blank" rel="noopener noreferrer" data-i18n="emailMe">تواصل عبر LinkedIn ↗</a>
           </div>
-
           <div class="portfolio-socials">
             <a href="https://www.instagram.com/jfz4l/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
             <a href="https://www.facebook.com/ahmd.almqtry.232629" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
             <a href="https://www.linkedin.com/in/ahmed-al-maqtari-a382b3286/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
             <a href="https://github.com/ahmedalmbass-web" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
           </div>
-
-          <p class="contact-note" data-i18n="contactNote">
-            يسعدني الاطلاع على فكرتك ومناقشة تفاصيلها.
-          </p>
+          <p class="contact-note" data-i18n="contactNote">يسعدني الاطلاع على فكرتك ومناقشة تفاصيلها.</p>
         </div>
       </div>
     </section>
@@ -647,12 +368,7 @@ html[data-theme="light"] {
         <span class="brand-mark">A<span>.</span></span>
         <span class="brand-name">AHMAD<span> / DIGITAL DESIGN</span></span>
       </a>
-
-      <p>
-        <span data-i18n="footerText">صُنع باهتمام بالتفاصيل.</span>
-        © <span id="currentYear"></span> Ahmad
-      </p>
-
+      <p><span data-i18n="footerText">صُنع باهتمام بالتفاصيل.</span> © <span id="currentYear"></span> Ahmad</p>
       <a class="back-to-top" href="#home" aria-label="العودة إلى الأعلى">↑</a>
     </div>
   </footer>
